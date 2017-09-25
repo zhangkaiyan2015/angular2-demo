@@ -1,0 +1,59 @@
+<div class="me-top">依全程之家</div>
+<div class="me-btn">
+  <span class="me-line">
+    <div class="line-left"></div>
+  </span>
+  <span class="me-botton" [routerLink]="['/appoint-doctor']">预约</span>
+  <span class="me-line">
+      <div class="line-right"></div>
+  </span>
+</div>
+<div class="user-info">
+  <span class="user-img">
+     <img class="user-head" src="./assets/icon/me.png"/>
+   </span>
+  <span>
+       <div>姓名</div>
+       <div class="user-honor">普通会员</div>
+   </span>
+  <span class="q-code">
+     <img src="./assets/icon/qr-code.png"  alt="">
+   </span>
+</div>
+<div class="me-contant">
+  <a [routerLink]="['/mywallet']">
+    <div class="me-item">我的钱包 <span class="arrow-right"></span></div>
+  </a>
+  <a [routerLink]="['/myappoint']">
+    <div class="me-item">我的预约<span class="arrow-right"></span></div>
+  </a>
+  <a [routerLink]="['/userinfo']">
+    <div class="me-item">联系方式<span class="arrow-right"></span></div>
+  </a>
+</div>
+<div class="tabs">
+    <div class="tabs-page">
+      <span [routerLink]="['/me']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/me.png" alt="">
+        <div class="tabs-text">我的</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/clinic']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/idoctor.png" alt="">
+        <div class="tabs-text">诊所</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/device']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/idevice.png" alt="">
+      <div class="tabs-text">设备</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/more']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/ifamily.png" alt="">
+      <div class="tabs-text">更多</div>
+      </span>
+    </div>
+  </div>

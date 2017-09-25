@@ -1,0 +1,55 @@
+<div class="">
+  <div class="me-top">
+    <div class="return" (click)="gotoback()">
+      <img src="./assets/icon/arrow-left.png" class="arrow-left" alt="">
+      <span class="return-text">返回</span>
+    </div>
+    我的钱包
+  </div>
+  <div id="mycontant">
+    <div class="my-wallet">
+      <div class="my_wallet_remain_text ">钱包账户余额</div>
+      <div class="my_wallet_remain">
+        <span class="my_wallte_text">元</span>0.00
+      </div>
+      <div class="my_wallet_circile ">
+        <span class="my_wallet_promis">保证金账户</span>
+        <span class="my_wallet_clause">《保证金用户服务协议》</span>
+        <div class="my_wallet_account">
+          <span>0.00</span>
+          <span class="my_wallet_total">/ 10.00</span>
+          <span class="my_wallte_text">元</span>
+        </div>
+      </div>
+    </div>
+    <a [routerLink]="['/mywallet-detail']">
+      <div class="me-item">交易明细 <span class="arrow-right"></span></div>
+    </a>
+    <a [routerLink]="['/mywallet-recharge']">
+      <div class="me-item">钱包余额充值<span class="arrow-right"></span></div>
+    </a>
+    <a (click)="getProStatus()">
+      <div class="me-item">保证金缴纳/退回<span class="arrow-right"></span></div>
+    </a>
+  </div>
+</div>
+<!-- 弹框 -->
+<div class="angular-cover" [hidden]="isHiddenPro">
+  <div class="white_content">
+      <div class="refund_item my_wallet_applay">申请退回保证金</div>
+      <div class="refund_item my_wallet_success">申请成功将退回 10 元保证金</div>
+      <div class="refund_item my_wallet_confirm" (click)="gotoPro()">确定</div>
+      <div class="refund_item my_wallet_cancle" (click)="hiddenPro()">取消</div>
+  </div>
+</div>
+
+<!-- 弹框 -->
+<div class="angular-cover" [hidden]="isHiddenWithdraw">
+    <div class="white_content">
+        <p class="mybutton-tips">您还未充值10元保证金，请先充值</p>
+        <div class="mybutton">
+          <span class="cancel-btn" (click)="cancelBtn()">取消</span>
+          <span class="confirm-btn">确定</span>
+        </div>
+    </div>
+  </div>

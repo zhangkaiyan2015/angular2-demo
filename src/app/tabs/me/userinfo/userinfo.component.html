@@ -1,0 +1,51 @@
+<div class="bg-cover">
+<div class="me-top">
+    <div class="return" (click)="gotoback()">
+      <img src="./assets/icon/arrow-left.png" class="arrow-left" alt="">
+      <span class="return-text">返回</span>
+    </div>
+    我的联系方式
+  </div>
+  <div id="mycontant" style="margin-top:70px">
+    <div class="userinfo-item">
+       <p>
+         <span>真实姓名</span>
+         <span class="userinfo-import">*重要信息</span>
+       </p>
+       <div class="userinfo-desc" [routerLink]="['/username']">
+          请准确填写
+          <span class="arrow-right"></span>
+       </div>
+    </div>
+    <div class="userinfo-item">
+        <p>
+          <span>联系手机</span>
+          <span class="userinfo-import">*重要信息</span>
+        </p>
+        <div class="userinfo-desc" [routerLink]="['/telephone']">
+           请准确填写
+           <span class="arrow-right"></span>
+        </div>
+     </div>
+     <div class="userinfo-item">
+        <p>
+          <span>身份证号码</span>
+          <span class="userinfo-import">*重要信息</span>
+        </p>
+        <div class="userinfo-desc" [routerLink]="['/idnumber']">
+            请准确填写
+           <span class="arrow-right"></span>
+        </div>
+     </div>
+     <div class="userinfo-item">
+        <p>
+          <span>联系地址</span>
+         
+        </p>
+        <div class="userinfo-desc" [routerLink]="['/address']">
+            点击选择联系地址
+           <span class="arrow-right"></span>
+        </div>
+     </div>
+  </div>
+</div>

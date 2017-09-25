@@ -1,0 +1,42 @@
+<div class="me-top">更多服务</div>
+<div id="mycontant" class="mycontant">
+  <div class="more-icon">
+    <img src="./assets/icon/mebrand.png" alt="">
+  </div>
+  <div class="more-title">服务与套餐</div>
+  <div class="more-item">
+    <div>
+      <img src="./assets/icon/客服.png" alt="">
+      <p>联系客服</p>
+    </div>
+    <div class="more-detail"></div>
+    <div></div>
+  </div>
+</div>
+
+<div class="tabs">
+    <div class="tabs-page">
+      <span [routerLink]="['/me']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/ime.png" alt="">
+        <div class="tabs-text">我的</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/clinic']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/idoctor.png" alt="">
+        <div class="tabs-text">诊所</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/device']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/idevice.png" alt="">
+      <div class="tabs-text">设备</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/more']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/family.png" alt="">
+      <div class="tabs-text">更多</div>
+      </span>
+    </div>
+  </div>

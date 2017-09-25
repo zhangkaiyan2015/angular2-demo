@@ -1,0 +1,26 @@
+<div class="bg-cover">
+  <div class="me-top">
+      <div class="return" (click)="gotoback()">
+        <img src="./assets/icon/arrow-left.png" class="arrow-left" alt="">
+        <span class="return-text">返回</span>
+      </div>
+      选择联系地址
+    </div>
+    <div id="mycontant" style="margin-top:70px">
+      <div class="address-item" [routerLink]="['/address-edit']">
+         <div class="address-desc">
+           <div>张开衍，18030390125</div>
+           <div>福建省 厦门市 集美区 杏林湾营运中心1号楼</div>
+         </div>
+         <div class="address-icon"><span class="address-arrow-right arrow-right "></span></div>
+      </div>
+      <div class="address-add">
+        <img src="./assets/icon/createAddress.png" alt="">
+        <span>新增收货地址</span>
+      </div>
+      <div class="userinfo-btn">
+        <button class="userinfo-buttoon">保存</button>
+      </div>
+    </div>
+  </div>
+

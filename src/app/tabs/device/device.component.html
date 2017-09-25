@@ -1,0 +1,59 @@
+<div class="me-top">医疗管理设备</div>
+<div id="mycontant" class="mycontant">
+  <div class="device-item">
+    <div>
+      <img src="./assets/icon/me.png" alt="">
+      <p>添加设备</p>
+    </div>
+    <div>
+      <img src="./assets/icon/me.png" alt="">
+      <p>设备管理</p>
+    </div>
+    <div>
+      <img src="./assets/icon/me.png" alt="">
+      <p>身体数据</p>
+    </div>
+  </div>
+  <div class="device-one">
+    <div class="device-icon">
+       <img src="./assets/icon/yuwellbp.jpg" alt="">
+    </div>
+    <div class="device-desc">
+       <div class="device-name">依全程-鱼跃远程智能电子血压计</div>
+       <div class="device-seq">YE680A GPRS版</div>
+       <!-- <div class="device-name">性能参数</div>
+       <div class="device-contant">
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+       </div> -->
+    </div>
+  </div>
+  <div class="device-btn">
+    <img src="./assets/icon/down.png" alt="">
+  </div>
+</div>
+<div class="tabs">
+    <div class="tabs-page">
+      <span [routerLink]="['/me']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/ime.png" alt="">
+        <div class="tabs-text">我的</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/clinic']" routerLinkActive="active">
+        <img class="tabs-icon" src="./assets/icon/idoctor.png" alt="">
+        <div class="tabs-text">诊所</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/device']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/device.png" alt="">
+      <div class="tabs-text">设备</div>
+      </span>
+    </div>
+    <div class="tabs-page">
+      <span [routerLink]="['/more']" routerLinkActive="active">
+      <img class="tabs-icon" src="./assets/icon/ifamily.png" alt="">
+      <div class="tabs-text">更多</div>
+      </span>
+    </div>
+  </div>
